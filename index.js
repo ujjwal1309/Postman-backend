@@ -25,8 +25,6 @@ app.get("/logout", async (req, res) => {
 
 app.use("/user", userRouter);
 
-app.use(authentication);
-
 app.use("/query", historyRouter);
 
 app.listen(7000, async () => {
